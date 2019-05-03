@@ -1,0 +1,393 @@
+Summary,Issue key,Issue id,Parent id,Issue Type,Status,Project key,Resolution,Assignee,Reporter,Creator,Created,Updated,Resolved,Fix Version/s,Component/s,Labels,Description,Watchers,Watchers,Watchers,Watchers,Watchers,Watchers,Watchers,Watchers,Watchers,Watchers,Outward issue link (Blocks),Outward issue link (Dependency),Outward issue link (Dependency),Outward issue link (Duplicate),Outward issue link (Mention),Outward issue link (Mention),Outward issue link (Parent-Child),Outward issue link (Parent-Child),Outward issue link (Parent-Child),Outward issue link (Parent-Child),Outward issue link (Parent-Child),Outward issue link (Parent-Child),Outward issue link (Parent-Child),Outward issue link (Parent-Child),Outward issue link (Relates),Attachment,Attachment,Attachment,Custom field (Acceptance Criteria),Custom field (Epic Colour),Custom field (Epic Link),Custom field (Epic Name),Custom field (Epic Status),Sprint,Sprint,Sprint,Custom field (Steps to Reproduce),Custom field (Story Points),Custom field (TestEng Required),Custom field (Testing Notes),Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment
+Schedules History View and Export,IHRAR-329,91675,,Story,Completed,AR,Completed,AdamHowell@iheartmedia.com,,,12/29/14 14:36,9/15/15 17:08,9/15/15 17:08,,,,"As a user, I want to query and export a report of slides that were programed for select date and time periods so that I can see an accurate timeline of schedule content whose performance can be measured.
+
+
+Original description---
+We need a way to view or export a history of what's been programmed in the tool for a selected endpoint or endpoints over a selected period.
+
+An example use case is reporting on Web Hero performance for the month of December.",MattPena@iheartmedia.com,CarolynBraza@iheartmedia.com,con-nyc1tlc,,,,,,,,,,,,,,,,,,,,,,,,,,"User can define a start and end date
+A report of slides scheduled for the selected container is generated detailing the scheduled time of each slide/position and is presented in chronological order.
+User can export the report to excel.",,,,,,,,,,,,,,,,,,,,
+vHost Manager Tool: Market list is being truncated,IHRAR-352,91662,,Bug,Completed,AR,Completed,MarkEscott@iheartmedia.com,MarkEscott@iheartmedia.com,MarkEscott@iheartmedia.com,12/29/14 12:39,6/4/15 15:59,6/4/15 15:59,,AMP Hosts Tool,,"As a Support manager using the vHost Manager tool, I would like to see all available Markets so I can associate new sites with the correct market.
+
+
+LEXINGTON-KY is missing as a market option in RadioEdit, specifically the vhost editor tool.
+
+1) cannot filter the list to select lexington-ky
+2) cannot associate a site with lexington-ky when creating or editing
+3) when manually scrolling through the site list, lexington-ky DOES display for the existing sites",AlexMamut@iheartmedia.com,MarkEscott@iheartmedia.com,DanThom@iheartmedia.com,ShawnGarrett@iheartmedia.com,mhibbard@iheartmedia.com,,,,,,,,,,,,,,,,,,,,,29/Dec/14 12:39 PM;ccrbdl1mje;12-29-2014 12-36-16 PM.jpg;https://jira.ihrint.com/secure/attachment/71396/12-29-2014+12-36-16+PM.jpg,29/Dec/14 12:39 PM;ccrbdl1mje;12-29-2014 12-36-48 PM.jpg;https://jira.ihrint.com/secure/attachment/71397/12-29-2014+12-36-48+PM.jpg,29/Dec/14 12:42 PM;ccrbdl1mje;12-29-2014 12-40-32 PM.jpg;https://jira.ihrint.com/secure/attachment/71398/12-29-2014+12-40-32+PM.jpg,,,,,,RadioEdit _09_IRATE MONK,,,"go to vhost tool
+try to select LEXINGTON-KY as a market filter",1,,,27/Jan/15 6:02 PM;mhibbard@iheartmedia.com;DESMOINES-IA is also missing.,"17/Feb/15 5:40 PM;DanThom@iheartmedia.com;need to update vhost code to either remove the 300 market limit from the query or filter more intelligently (tried filtering better, but no obvious attribute to filter on popped out).",23/Feb/15 3:53 PM;ShawnGarrett@iheartmedia.com;As is HONOLULU-HI,24/Feb/15 7:56 PM;mhibbard@iheartmedia.com;As is TUSCALOOSA-AL,"25/Feb/15 11:00 AM;MarkEscott@iheartmedia.com;Probably don't need to list every market that goes missing. If Dan's comment about the 300 market limit in the query is the problem, this will continue to be an issue as more markets are added to the database (likely for 3rd party streams used in SMT).
+
+[~ccrlax1dat] should this be assigned to someone else for development so it can be scheduled and addressed?",04/Jun/15 1:14 PM;AlexMamut@iheartmedia.com;Pushed to staging (http://radioedit.ihrdev.com). Please review.,,,
+SMT 3.0: Deny button of Change Requests doesn't work after clicking,IHRAR-221,91092,,Bug,Completed,AR,Completed,,DowneyTung@iHeartMedia.com,DowneyTung@iHeartMedia.com,12/15/14 16:58,3/18/15 18:43,3/18/15 18:43,,Streams,,The Deny button of Change requests is not working. The page stays the same and no information was loaded after that. ,DowneyTung@iHeartMedia.com,ThomasDrapeau@iheartmedia.com,,,,,,,,,,,,,,,,,,,,,,,,15/Dec/14 4:58 PM;con-ccrnyc1dot;Deny Button_Change Requests_SMT Tool_RadioEdit.PNG;https://jira.ihrint.com/secure/attachment/70898/Deny+Button_Change+Requests_SMT+Tool_RadioEdit.PNG,,,,,IHRAR-237,,,,,,,,,,,,,,,,,,
+SMT-Add New Stream Button doesn't work after clicking,IHRAR-224,90771,,Bug,Completed,AR,Fixed,AlexMamut@iheartmedia.com,DowneyTung@iHeartMedia.com,DowneyTung@iHeartMedia.com,12/10/14 15:54,3/12/15 12:33,12/16/14 12:48,,Streams,,The page supposed to forward to a new page for filling details about new stream. But the page stayed the same. ,MichaelReichard@iheartmedia.com,DowneyTung@iHeartMedia.com,,,,,,,,,,,,,,,,,,,,,,,,10/Dec/14 3:54 PM;con-ccrnyc1dot;RadioEdit_SMT_Add Stream Bug.PNG;https://jira.ihrint.com/secure/attachment/70638/RadioEdit_SMT_Add+Stream+Bug.PNG,,,,,,,,,,,"1.Go to Stream Manager
+2.Click Streams in the left Nav panel
+3. Click Add station in the Upright corner
+4.Select Provider as ""Univision"" 
+5. Input Call sign as ""DOWNEYT""
+6.Input Name as ""DOWNEYTEST""
+7.Select Original Market as ""ABILENE, TX""
+8.Click Add Stream in the bottom right corner
+",,No,,,,,,,,,,
+Catalog Attach Improvements (Epic),IHRAR-330,90027,,Epic,Completed,AR,Completed,AlexMamut@iheartmedia.com,AdamHowell@iheartmedia.com,AdamHowell@iheartmedia.com,12/1/14 12:53,4/30/19 9:39,4/30/19 9:39,,,,"https://www.pivotaltracker.com/epic/show/1545458
+o	Talk & talk show support
+o	P4 activity support
+o	Improve the link clearing process (we have had many errors where catalog attach info was still passed in the payload after manual links had been entered)
+o	Match field labels in the tool to the actual JSON labels
+o	Add station artwork from catalog attaches
+o	Improve search surfacing time for newly created stations
+o	Update Web catalog attach addresses to be relative instead of absolute
+",MattPena@iheartmedia.com,con-nyc1tlc,AdamHowell@iheartmedia.com,ThomasDrapeau@iheartmedia.com,,,,,,,,,,,,,IHRAR-362,IHRAR-361,IHRAR-360,IHRAR-364,IHRAR-363,IHRAR-417,IHRAR-416,IHRAR-418,,,,,,,,Catalog Attach Improvements,Done,,,,,,,,18/Mar/15 10:56 AM;MattPena@iheartmedia.com;[~con-nyc1tlc] Will split this into separate tickets,18/Mar/15 10:58 AM;con-nyc1tlc;Yeah this is epic-sized ;),15/Apr/15 2:41 PM;ThomasDrapeau@iheartmedia.com;found it!,,,,,,
+Create market export service for AMP to pull from,IHRAR-217,89627,,Story,Completed,AR,Completed,,AlexMamut@iheartmedia.com,AlexMamut@iheartmedia.com,11/20/14 9:22,4/22/15 15:03,4/21/15 16:44,SMT 3.0 Release,Streams,,Markets needs to be automatically ingested into AMP instead of the current manual process. Create a script service which outputs all the markets via JSON for AMP to ingest.,AlexMamut@iheartmedia.com,MichaelReichard@iheartmedia.com,AdamHowell@iheartmedia.com,,,,,,,,,,,,,,,,,,,,,,IHRAR-208,16/Apr/15 2:53 PM;ccrnyc1mcr;markets19.json;https://jira.ihrint.com/secure/attachment/80670/markets19.json,,,,,IHRAR-237,,,RadioEdit _05_E,,,,2,Yes,,20/Nov/14 9:24 AM;AlexMamut@iheartmedia.com;http://script.radioedit.ihrdev.com/stream-manager/market-export/,"10/Apr/15 8:52 AM;AdamHowell@iheartmedia.com;[~ccrnyc1mcr] please review this functionality and if you are happy with it, lets move to done. Let's do that for all of these SMT 3.0 tickets.",15/Apr/15 12:16 PM;AdamHowell@iheartmedia.com;I'm marking this as done. The real work and communication with AMP team will happen in IHRAR-208 and the linked AMP ticket for a new temp script to run on demand.,"16/Apr/15 2:53 PM;MichaelReichard@iheartmedia.com;we actually need a way to continue the manual process since the amp job won't be complete in parallel.  
+
+The output here: http://script.radioedit.ihrdev.com/stream-manager/market-export/
+
+Should match exactly the attached json output in both data and formatting (markets19.json).  ","16/Apr/15 3:08 PM;AlexMamut@iheartmedia.com;Made them match: http://script.radioedit.ihrdev.com/stream-manager/market-export/
+
+Please review.","17/Apr/15 2:55 PM;MichaelReichard@iheartmedia.com;marcel signed off on this.  thanks, alex.  ",,,
+Schedules: Add a confirmation message after publishing a slide,IHRAR-331,89458,,Story,Completed,AR,Completed,,TrinaKing@iheartmedia.com,TrinaKing@iheartmedia.com,11/18/14 9:44,9/25/15 14:59,9/25/15 14:59,,,,As a user I want to receive a confirmation message  that the slide was published successfully so that there is no doubt in my mind.,TrinaKing@iheartmedia.com,con-nyc1tlc,AdamHowell@iheartmedia.com,ThomasDrapeau@iheartmedia.com,,,,,,,,,,,,,,,,,,,,,,,,,"User receives a notification that their slide has been published
+Notification requires acknowledgement by the user.",,,,,,,,"1) Create a new slide
+2) Click Save
+3) Click Publish
+
+",1,,,18/Nov/14 12:29 PM;con-nyc1tlc;It looks like we lost the confirmation growl after pushing Kirby.  This is reproducible.,,,,,,,,
+unlock site ID for 3rd parties,IHRAR-213,85149,,Story,Completed,AR,Completed,,MichaelReichard@iheartmedia.com,MichaelReichard@iheartmedia.com,10/3/14 13:02,4/15/15 11:32,4/3/15 16:59,SMT 3.0 Release,Streams,,"field hidden for 3rd parties, please unlock it.  ",AlexMamut@iheartmedia.com,MichaelReichard@iheartmedia.com,ThomasDrapeau@iheartmedia.com,,,,,,,,,,,,IHRAR-199,,,,,,,,,,,,,,,,IHRAR-237,,,RadioEdit _05_E,,,,,No,,31/Oct/14 9:50 AM;AlexMamut@iheartmedia.com;As per Mike Lujan this has been fixed.,04/Mar/15 3:45 PM;AlexMamut@iheartmedia.com;Duplicate of IHRAR-199,,,,,,,
+SMT: Station Flags,IHRAR-210,84218,,Story,Completed,AR,Completed,,,,9/17/14 13:22,4/16/15 11:18,4/16/15 11:18,SMT 3.0 Release,Streams,,"We would like to add a new set of attributes to stations, to ""flag"" them for certain features on clients.  
+
+The two new flags, with their default states, are:
+
+1) Sponsored?	(Yes/No)
+	Default State:	No
+2) Child-Oriented?	(Yes/No)
+	Default State:	No
+
+Examples of the use of these flags include:
+- Suppressing ads on a ‚Äúchild-oriented‚Äù station page on Web
+- Changing the reg. gate rules on a child-oriented page
+- Remove the age gate on a child-oriented page
+- Suppressing run-of-site ads from a Sponsored station page
+- Introducing new ad units on a Sponsored station page
+
+The goal in implementing this is to do so in such a way that a wholesale directory change is not triggered for the mobile clients.  The intent is that no data should change for the majority of stations so only discreet changes should be pushed through for affected stations and not a whole new directory listing.
+
+More info on the Child-Oriented flag needs here: https://wiki.ccrd.clearchannel.com/display/PM/Anonymous+COPPA+Compliance+Requirements
+----------
+
+
+Adam build notes...
+These will be in feeds array
+Sponsored is either checked yes or does not exist
+Child-Oriented is checked yes or does not exist",1110035,AlexMamut@iheartmedia.com,MichaelReichard@iheartmedia.com,RobRowe@iheartmedia.com,con-nyc1tlc,ThomasDrapeau@iheartmedia.com,,,,,,,,,,,,,,,,,,,,,,,,,IHRAR-237,,,RadioEdit _02_B,RadioEdit _03_C,RadioEdit _05_E,,1,No,,20/Nov/14 9:18 AM;AlexMamut@iheartmedia.com;This is blocked due to an AMP release which is needed to enable the feeds array to accept any key value pairs.,26/Mar/15 9:36 AM;AlexMamut@iheartmedia.com;Ready for QA.,10/Apr/15 11:09 AM;MichaelReichard@iheartmedia.com;Looks good in staging.  ,,,,,,
+Create a service endpoint for AMP providing genre data,IHRAR-214,84212,,Story,Completed,AR,Completed,AlexMamut@iheartmedia.com,ThomasDrapeau@iheartmedia.com,ThomasDrapeau@iheartmedia.com,9/17/14 12:04,7/6/15 18:24,7/6/15 18:24,,Streams,,"Create a service that returns genre data. AMP will consume this. Currently AMP makes a JSON-RPC call to get the same data, RadioEdit would prefer this be done via service. The service output to start off should mirror the JSON-RPC return, then from there we can work with the AMP team to optimize.
+",MattPena@iheartmedia.com,AlexMamut@iheartmedia.com,cccbur1mjl,ThomasDrapeau@iheartmedia.com,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,No,,31/Oct/14 11:56 AM;cccbur1mjl;This ticket is still open,"06/Nov/14 10:41 AM;AlexMamut@iheartmedia.com;AMP is OK with JSONRPC calls as long as they still work. I believe JSONRPC works just fine in Kirby and should be viable for now. [~howella] can you confirm?
+
+Thanks.","06/Nov/14 10:59 AM;ThomasDrapeau@iheartmedia.com;JSON-RPC may work fine, but I'd prefer a service for this. The JSON-RPC output hasn't been guaranteed to produce the exact same output from release to release, while service output can. Let me know if you disagree, we can discuss Alex.",13/Nov/14 2:48 PM;AlexMamut@iheartmedia.com;http://script.radioedit.ihrdev.com/stream-manager/genre-export/,06/Jul/15 6:24 PM;MattPena@iheartmedia.com;will revisit when amp is ready to switch their service.,,,,
+Web URL inserted should include slug,IHRAR-260,84049,,Story,Completed,AR,Fixed,AlexMamut@iheartmedia.com,RobRowe@iheartmedia.com,RobRowe@iheartmedia.com,9/14/14 16:09,5/8/15 11:20,2/10/15 9:44,,AMP Keywords Tool,,"/live/925/ 
+should be 
+http://www.iheart.com/live/1040-who-925/",1110035,AlexMamut@iheartmedia.com,RobRowe@iheartmedia.com,con-nyc1tlc,ThomasDrapeau@iheartmedia.com,,,,,,,,,,,,,,,,,,,,,,,,,,IHRAR-262,,,RadioEdit _02_B,,,"http://tools.iheart.com
+AMP Keywords Tool
+New Keyword
+Enter keyword/description
+Load Catalog Item
+Select a live station
+",1,,,01/Oct/14 2:43 PM;AlexMamut@iheartmedia.com;The app was removing www.iheart.com but the station name isn't in the URL when it comes from the catalog. Can we update the catalog?,03/Oct/14 11:37 AM;AlexMamut@iheartmedia.com;Added www.iheart.com to the url.,26/Feb/15 10:41 AM;1110035;This looks like it has already been pushed to production some time ago.,08/May/15 11:20 AM;RobRowe@iheartmedia.com;Will be handled in https://jira.ccrd.clearchannel.com/browse/IHRAR-351,,,,,
+Navigate entries by forward & back arrows,IHRAR-261,84047,,Story,Completed,AR,Completed,,RobRowe@iheartmedia.com,RobRowe@iheartmedia.com,9/14/14 15:45,5/8/15 11:30,3/23/15 16:03,,AMP Keywords Tool,amp-keywords-tool,"As iHeartRadio, we want to be able to quickly spot-check all field values for items entered into the Keyword Override Tool so that we can efficiently ensure the correctness of entries in the tool.",1110035,AlexMamut@iheartmedia.com,coreykahn@iheartmedia.com,RobRowe@iheartmedia.com,ThomasDrapeau@iheartmedia.com,,,,,,,,,,IHRAR-351,IHRAR-257,,,,,,,,,,14/Sep/14 3:45 PM;ccrnyc1rar;re_ampkeywordstool_arrownavigation.jpg;https://jira.ihrint.com/secure/attachment/62351/re_ampkeywordstool_arrownavigation.jpg,,,"Forward/back arrows navigate between items in the current display order of the list view.
+When not focused on a form field, user can also use the right/left arrow buttons on their keyboard to navigate between entries
+Modal should remain at current scroll point when navigating between entries.
+
+
+",,IHRAR-262,,,RadioEdit _03_C,,,"http://tools.iheart.com
+AMP Keywords Tool
+Open an item",2,,,"18/Mar/15 9:48 AM;AlexMamut@iheartmedia.com;Up on staging:
+App: AMP KT Dev
+URL: http://radioedit.ihrdev.com","18/Mar/15 5:58 PM;RobRowe@iheartmedia.com;Forward & back look great! But for some reason I can't modify certain items. Not sure if it's related to this change or not.
+https://www.dropbox.com/s/3one3umr3ju142v/searchoverride-modifydisabled.mov?dl=0","19/Mar/15 9:48 AM;RobRowe@iheartmedia.com;This ticket is good to go!
+Alex explained to me that the modified issue is related to a separate request in IHRAR-257. I've opened AR-351 to remedy this issue.",08/May/15 11:14 AM;RobRowe@iheartmedia.com;Looks good in prod,,,,,
+"AMP Keyword Tool: When inserting a ""custom"" link, include the slug in the Web URL for artists",IHRAR-259,83788,,Story,Completed,AR,Completed,,RobRowe@iheartmedia.com,RobRowe@iheartmedia.com,9/10/14 10:26,5/8/15 11:21,3/18/15 10:48,,AMP Keywords Tool,amp-keywords-tool,"When inserting a ""custom"" link, include the slug in the Web URL for artists. So for the J. Cole example the Web URL should be /artist/j-cole-750791/",AlexMamut@iheartmedia.com,RobRowe@iheartmedia.com,,,,,,,,,,,,,,,,,,,,,,,,13/Feb/15 1:31 PM;ccrnyc1rar;Screen Shot 2015-02-13 at 1.31.07 PM.png;https://jira.ihrint.com/secure/attachment/73954/Screen+Shot+2015-02-13+at+1.31.07+PM.png,,,,,IHRAR-262,,,,,,"1. http://tools.iheart.com
+2. New Keyword
+3. Content Type: custom
+4. Load Catalog Item
+5. Search and insert ""J. Cole""
+Notice Web URL is /artist/-750791/",,,,01/Oct/14 2:45 PM;AlexMamut@iheartmedia.com;The app was removing www.iheart.com but the station name isn't in the URL when it comes from the catalog. Can we update the catalog?,11/Feb/15 3:39 PM;AlexMamut@iheartmedia.com;Is this ticket still valid? I believe this was fixed. It's currently fixed on radioedit staging.,"13/Feb/15 1:31 PM;RobRowe@iheartmedia.com;Not sure I'm looking at the right place, but tried on http://api.radioedit.ihrdev.com/service/app/amp-keywords-tool/. Seems like it's still inserting the http://www.iheart.com part. See here: [^Screen Shot 2015-02-13 at 1.31.07 PM.png]","18/Feb/15 10:51 AM;AlexMamut@iheartmedia.com;Removed domain from the web link. As for content slugs in the URI, can we just update the catalog, [~con-nyc1tlc]?","06/Mar/15 9:01 AM;1110035;[~ccrnyc1rar] I'm closing because this looks like it is fixed as of the latest release of the tool. Please feel free to re-open if more work is needed, but my latest review shows that this ticket has been addressed.","09/Mar/15 3:46 PM;RobRowe@iheartmedia.com;Here's a quick review of http://tools.iheart.com/service/app/amp-keywords-tool/
+||Content Type||Content Id||Web URL||iPhone URL||Android URL||Feedback||
+|live|1469|/live/z100-1469/|ihr://play/live/1469|ihr://play/live/1469|Web URL is missing station name and trailing slash|
+|p4|129|/original/50-Minute-Workout/|ihr://play/custom/original/129|ihr://play/custom/original/129|Web URL is missing trailing slash|
+|track|774860|/artist/rihanna-34742/songs/umbrella-774860/|ihr://play/custom/track/774860|ihr://play/custom/track/774860|Web URL is missing artist and track name and trailing slash|
+|custom|34742|/artist/rihanna-34742/|ihr://play/custom/artist/34742|ihr://play/custom/artist/34742|Web URL is missing artist name and trailing slash|",08/May/15 11:21 AM;RobRowe@iheartmedia.com;Will be handled in https://jira.ccrd.clearchannel.com/browse/IHRAR-351,,
+Delete Users,IHRAR-334,82950,,Story,Completed,AR,Completed,,,,8/26/14 12:11,4/9/15 9:25,4/7/15 16:41,,,,"National admins should be able to delete users when they are terminated or as a clean-up function.
+
+Note that this is a ""clean-up"" function and is different from removing a user's permissions.",con-nyc1tlc,ThomasDrapeau@iheartmedia.com,TravisTerry@iheartmedia.com,,,,,,,,,,,,,,,,,,,,,,,,,,,,IHRAR-345,,,RadioEdit _05_E,,,,,Yes,,09/Apr/15 9:25 AM;TravisTerry@iheartmedia.com;NOPE. This comes from an LDAP import,,,,,,,,
+put siteid in feeds to work with amp,IHRAR-218,82707,,Story,Completed,AR,Completed,,AdamHowell@iheartmedia.com,AdamHowell@iheartmedia.com,8/21/14 13:11,4/15/15 11:32,4/10/15 12:43,SMT 3.0 Release,Streams,,this is to coorespond with AMP-2117,AlexMamut@iheartmedia.com,cccbur1mjl,AdamHowell@iheartmedia.com,ThomasDrapeau@iheartmedia.com,,,,,,,,,,,OLDAMP-2117,,,,,,,,,,OLDAMP-2117,,,,,,IHRAR-237,,,RadioEdit _05_E,,,,1,No,,31/Oct/14 9:51 AM;AlexMamut@iheartmedia.com;As per Mike Lujan this has been fixed.,31/Oct/14 11:56 AM;cccbur1mjl;Ready for review,,,,,,,
+Genre FUX Center Point Breaks Thumb,IHRAR-222,82550,,Bug,Completed,AR,Completed,,,,8/19/14 17:06,4/22/15 14:47,4/22/15 14:47,,Streams,,"Changing the center point on Genre FUX images breaks the preview on the genre detail screen.  You can see this on the Rock & Holiday images on SMT Stage.
+
+The images preview as normal if you upload them without changing the center point.
+
+This also seems to stretch the image on the list view.",AlexMamut@iheartmedia.com,con-nyc1tlc,ThomasDrapeau@iheartmedia.com,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,No,,31/Oct/14 9:52 AM;AlexMamut@iheartmedia.com;As per Mike Lujan this has been fixed.,,,,,,,,
+Feed ingestion from non-owned entities,IHRAR-335,82224,,Story,Completed,AR,Completed,,,,8/17/14 15:04,5/18/15 13:15,5/18/15 13:15,,,,"As a user I want to setup a collection of partner content so that it can be used by other collections in radioedit.
+
+
+Now that we've solved how we're transporting the Live Station Content data, I'd like to start thinking about how we could pull in content from non-owned stations. Hopefully we can solve this in a way that will also work for our other profile pages like artist, show, digital stations, etc. Could be something like receiving an RSS feed from a partner and surfacing the content in the same way we do on the Live Station Content pages which link out to their respective properties.
+
+Partners' content gets the same treatment as owned entities and is indistinguishable to the clients.",con-nyc1tlc,ThomasDrapeau@iheartmedia.com,,,,,,,,,,,,,,,,,,,,,,,IHRAR-120,,,,user can setup a collection using an rss feed from a vendor,,IHRAR-349,,,,,,,,,,,,,,,,,,
+Drag-and-Drop Add,IHRAR-338,81430,,Story,Completed,AR,Completed,AdamHowell@iheartmedia.com,,,8/5/14 19:59,9/15/15 17:20,9/15/15 17:20,,,,As a user I want to be able to add tool or Publish Tag permissions via drag and drop.,con-nyc1tlc,ThomasDrapeau@iheartmedia.com,,,,,,,,,,,,,,,,,,,,,,,,,,,user can add permissions to a user or group of users by drag and dropping the applicable permission.,,,,,,,,,,,,,,,,,,,,
+Sequentially Add Perms,IHRAR-337,81429,,Story,Completed,AR,Completed,AdamHowell@iheartmedia.com,,,8/5/14 19:58,7/6/15 18:20,7/6/15 18:20,,,,"As a user, I want to select multiple users once during a session so that i can apply different sets of tag and tool permissions to the selected group.
+
+Original Description---
+The tool should be able to add additional tool or Publish Tag permissions after the initial set granted.  In other words, if I have selected five users and added them to a Station Publish Tag, I should then be able to add those same users to another Publish Tag or tool without having to re-select them.
+
+This facilitates a workflow of setting up one or more users for all of the permissions they need to start using the system all at once.  This will immensely speed up not only initial system deployment but also new hire on-boarding.",MattPena@iheartmedia.com,con-nyc1tlc,ThomasDrapeau@iheartmedia.com,,,,,,,,,,,,,,,,,,,,,,,,,,User multi-select users stay selected until user selection changes or user navigates to a new screen.,,IHRAR-295,,,,,,,,,,"06/Jul/15 6:20 PM;MattPena@iheartmedia.com;dont think this will work in current setup. not implementing for the time being,",,,,,,,,
+Bulk Add Users,IHRAR-336,81428,,Story,Completed,AR,Completed,AdamHowell@iheartmedia.com,,,8/5/14 19:54,7/6/15 18:04,7/6/15 18:00,,,,As a user I want to be able to multi-select multiple users to add permissions for a set of tools and Publish Tags.,MattPena@iheartmedia.com,con-nyc1tlc,ThomasDrapeau@iheartmedia.com,,,,,,,,,,,,,,,,,,,,,,,,,,users can select multiple users and apply tool and tag permissions,,IHRAR-295,,,,,,,,,,06/Jul/15 6:00 PM;MattPena@iheartmedia.com;ticket no longer relevant,06/Jul/15 6:00 PM;MattPena@iheartmedia.com;already happens,,,,,,,
+Permissions Reverse-Lookup,IHRAR-339,81425,,Story,Completed,AR,Completed,AdamHowell@iheartmedia.com,,,8/5/14 19:33,7/6/15 17:59,7/6/15 17:59,,,,As a user I want to view a list of users who have been assigned usage rights for any particular Tool or Publish Tag.,MattPena@iheartmedia.com,con-nyc1tlc,ThomasDrapeau@iheartmedia.com,,,,,,,,,,,,,,,,,,,,,,,,,,User can view users permissioned for a tool by viewing the access on the tool level,,IHRAR-295,,,,,,,,,,06/Jul/15 5:59 PM;MattPena@iheartmedia.com;covered by ar-692,,,,,,,,
+Permissions Lookup,IHRAR-340,81424,,Story,Completed,AR,Completed,AdamHowell@iheartmedia.com,,,8/5/14 19:31,7/6/15 17:59,7/6/15 17:59,,,,"As a user, I want to see the tools and publishing tags I am permissioned for when viewing my profile in the users tool.
+
+original description---
+The tool should display a list of Tools and Publish Tags any given individual user is permissioned for, including which environment(s) they are permissioned in in the case of tools.",MattPena@iheartmedia.com,con-nyc1tlc,ThomasDrapeau@iheartmedia.com,,,,,,,,,,,,,,,,,,,,,,,,,,User can view the tags and tools permissioned for each user profile in the users tool,,IHRAR-295,,,,,,,,,,06/Jul/15 5:59 PM;MattPena@iheartmedia.com;already part of users tool,,,,,,,,
+Tag-Level Perms Within Specific Namespaces,IHRAR-422,81423,,Story,Completed,AR,Completed,,,,8/5/14 19:29,4/1/15 16:38,4/1/15 16:38,,Users,,"Genres, Stations, Events, Shows and Personalities are all examples of Namespaces that require individual tag-level permissions.
+
+Genres will have format bosses and station leads that will be empowered to publish to individual Genre Tags.  Stations will have DPDs and Digital Producers who will be tasked with filling their station feeds with compelling content.  And Shows and Personalities will have staffs seeking to populate their blogs.
+
+The various shows and markets are utterly competitive with each other, so it is critical that we be able to control permissions for these types of Publish Tags on an individual user level.",con-nyc1tlc,ThomasDrapeau@iheartmedia.com,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Namespace-Level Perms,IHRAR-421,81422,,Story,Completed,AR,Completed,AdamHowell@iheartmedia.com,,,8/5/14 19:21,7/6/15 14:53,7/6/15 14:53,,Users,,"As a National admin, I want to be able to designate which users can change namespace properties so that users can manage that data.
+
+
+
+Original description-
+Several of the Tag Namespaces should not require permissions at a level more granular than the Namespace level, i.e. permissions would be assigned to users for the entire namespace at once.
+
+Artists is an example of such a Namespace.  National and select Local users will be granted permission to publish to the artist catalog in general.
+
+Campaigns (ad tags) is another Namespace that likely will have rights assigned across its entirety, for example as Ad Ops uses it to set up and tear down sales campaigns at will.
+
+Genres, Stations, Events, Shows and Personalities will all need individual tag-level permissions, to be described under another ticket.",con-nyc1tlc,ThomasDrapeau@iheartmedia.com,,,,,,,,,,,,,,,,,,,,,,,,,,,Permissioned users can access select namespaces within the namespace tool,,REAP-966,,,,,,,,,,,,,,,,,,
+Manage Users Permissions,IHRAR-341,81420,,Story,Completed,AR,Completed,,,,8/5/14 19:12,4/9/15 15:00,4/9/15 15:00,,,,"I'm a manager who needs to assign privileges to tools and tags in radioedit to people who report to me so that they can use radioedit to publish content.
+
+
+--Original Ticket Description---
+Associate users in RadioEdit with other users who can manage them, meaning assign them permissions to RadioEdit tools and Publishing Tags.
+
+Expected use case is to associate the users from a market cluster with the DPD or Tech Director for that cluster, so that they in turn can assign out tag and tool permissions as needed.",con-nyc1tlc,ThomasDrapeau@iheartmedia.com,,,,,,,,,,,,,,,,,,,,,,,,,,,"Users in radioedit can be assigned to a supervisor/manager
+User can only be assigned privileges that the supervisor/manager is granted",,IHRAR-345,,,RadioEdit _05_E,,,,1,Yes,,,,,,,,,,
+Create a User From an LDAP Account,IHRAR-342,81419,,Story,Completed,AR,Completed,,,,8/5/14 19:10,4/15/15 11:07,4/15/15 11:07,,,,"Create a user from an active LDAP account, including importing full first and last name.",con-nyc1tlc,ThomasDrapeau@iheartmedia.com,,,,,,,,,,,,,,,,,,,,,,,,,,,"New Radioedit accounts can be created from active LDAP accounts
+Users First & last name, user ID and email are stored in radioedit user account.",,IHRAR-345,,,RadioEdit _05_E,,,,1,Yes,,,,,,,,,,
+Artist tag source parity,IHRAR-439,81399,80647,Sub-task,Completed,AR,Completed,,ThomasDrapeau@iheartmedia.com,ThomasDrapeau@iheartmedia.com,8/5/14 14:30,5/8/15 16:32,5/8/15 16:32,,,,"For artists (names), you can either associate the artist ID with the tag dynamically i.e. when the user searches for the artist to create a tag from, or you can import a list of artist names/IDs from the content database prior to the user searching.
+
+Artist IDs may need to be updated after they are associated with tags, in the case that we discover the artist record needs to be merged/split with/from others.
+
+Artist IDs are associated with tags, but are also the key binding ingredient wherever artist associations are made in RadioEdit (i.e. DL/Schedules, Genre FUX, Perfect 4, contesting, etc).
+
+Data source for artists is:
+
+Server: iheartdw.ihrint.com
+Username: radioedit
+Password: rD8#fEz3
+
+Canonical table with artist IDs and names is: catalog.dbo.amw_artist
+
+Table to look swaps up in is: catalog.dbo.artist_merge_master
+
+This table has two columns ‚Äì artistid and good_artistid.  Artistid is the legacy artistid that has been merged and no longer exists.  Good_artistid is the live artistid that still exists.  There can be multiple old artistids for a good_artistid, each will have their own row.",con-nyc1tlc,AdamHowell@iheartmedia.com,ThomasDrapeau@iheartmedia.com,,,,,,,,,,,,,,,,,,,,,,,06/Aug/14 5:26 PM;Top 1k Artists 06.08.14.xlsx;https://jira.ihrint.com/secure/attachment/59917/Top+1k+Artists+06.08.14.xlsx,,,,,,,,,,,,,,,06/Aug/14 5:26 PM;con-nyc1tlc;Top 1K artists by plays as of 06.08.14 attached:,,,,,,,,
+Listening Attribute,IHRAR-343,81221,,Story,Completed,AR,Completed,,,,8/4/14 10:50,7/6/15 16:32,7/6/15 16:32,,,,"Every Publish or Subject tag will have an attribute called ""Listening Opportunity"" describing if it is the referential Publish Tag for a live or custom station.
+
+This attribute is binary yes/no.
+
+The attribute will not be editable on a tag level.  This attribute is set up on the tag namespace properties detail screen for the entire namespace.
+
+Tag namespaces expected to have this property include:
+- Artists (Each artist page has a playable artist custom station.)
+- Genres (Genre hub pages on Web will have a playable station on them.)
+- iHeart Stations (CCM+E O&O stations obviously have listening opportunities in their headers.)
+- iHeart Events (We expect all events to have a custom station on them.)
+- Personalities (Personalities will surface at least a live station the personality is on in the header.)
+- Shows (Shows will surface at least a live station the show is on in the header.)
+
+Dirty Keywords do not need this property, or can alternately have it as always ""no"" across all dirty keywords.",MattPena@iheartmedia.com,RobRowe@iheartmedia.com,con-nyc1tlc,ThomasDrapeau@iheartmedia.com,,,,,,,,,,,,,,,,,,,,,,,,,,,IHRAR-348,,,,,,,,,,05/Aug/14 10:09 AM;ThomasDrapeau@iheartmedia.com;And what will we use it for?,"05/Aug/14 10:13 AM;con-nyc1tlc;As long as we're being measured against TLH & ATSL, it's valuable to know which tags (& therefore content items) relate to listening opportunities.
+
+I'm contemplating requiring that everything published into the system relate to at least one listening opportunity.",06/Jul/15 4:32 PM;MattPena@iheartmedia.com;flint will pull listening opportunities based on available tags. ticket no longer needed.,,,,,,
+Alternate Genre Images,IHRAR-215,81028,,Story,Completed,AR,Completed,,,,7/30/14 15:54,4/28/15 15:56,4/28/15 15:56,,Streams,,"We would like to add a high-quality, square genre image for TVs to SMT.
+
+This 1:1 (square) aspect ratio image will also be used for CarPlay and Android Auto clients by shrinking it down via iScale.
+
+We should add the new images to the right of the existing one on the genre ""detail"" screen, and label the two as follows:
+
+1) ‚Äú16:9‚Äù - the current 16:9-ish rectangle populated by 280x128 px images as of 7/30/14 (we expect to replace this with a bigger image once iPhone is on iScale after 5.2.)
+
+2) ‚ÄúSquare‚Äù - a 1:1, 600x600 which will be native on Vizio & scaled down for Auto
+
+Additionally, we should change the existing image preview on the genre detail screen to match how it appears in the genre list view and properly reflect its existing 16:9-ish image ratio. The new images should also reflect the image ratios but should be scaled down to the current 100 px max height to fit in the tool.
+
+The new image should contain the same information as the current 280x128 one, positioned to the right side of the preview:
+
+1) Filetype
+2) Pixel dimensions
+3) ‚ÄúRemove Icon‚Äù link
+
+Finally, we should add tags to the images in SMT matching the labels above, so AMP knows which is which and the clients can declare which one they are requesting.
+
+All ""focus"" points should continue to default to the center point as they do with the current image and continue to be adjustable as they are now.
+
+Note- and very important- we can't change the output or call for any existing clients, so we should pass through at minimum the same payload to AMP as at present. Clients that do not specify an image-type tag in their call should get the current existing small image. We must preserve existing functionality so as not to break existing Web and Mobile 5.0+ clients already using these images.
+
+We should default to serve the current 16x9-ish to any client which does not specify a version they are asking for.",AlexMamut@iheartmedia.com,MichaelReichard@iheartmedia.com,RobRowe@iheartmedia.com,con-nyc1tlc,MatthewFielder@iheartmedia.com,,,,,,,,,,,,,,,,,,,,OLDAMP-2117,,,,,,IHRAR-237,,,RadioEdit _06_ FERRETCANNON,,,,,,,"23/Apr/15 4:29 PM;MichaelReichard@iheartmedia.com;Alex, please remove this work from genre pages for now.  
+
+Genre form should only include: 
+
+1st line
+ID | Name | Site ID | Group | 
+
+next line:
+[ ] Show in genre FUX 
+
+Thumb box","23/Apr/15 4:32 PM;MichaelReichard@iheartmedia.com;Also, there should be no change in the structure or data points sent to amp / t3","24/Apr/15 8:22 AM;AlexMamut@iheartmedia.com;Is this release critical?
+
+Also you want the keywords box removed?","24/Apr/15 12:42 PM;MichaelReichard@iheartmedia.com;It's critical that it work correctly, and the same way it does right now in production.  
+
+Keep keywords, sorry.  ","24/Apr/15 12:49 PM;AlexMamut@iheartmedia.com;The reason I ask is because this is a display change. Nothing on the backend is changing, right?",28/Apr/15 12:56 PM;AlexMamut@iheartmedia.com;Changed the display of edit genre. Please review.,28/Apr/15 3:56 PM;MichaelReichard@iheartmedia.com;looks good.  ,,
+Collection Query,IHRAR-424,80727,,Story,Completed,AR,Completed,,,,7/25/14 14:39,5/17/15 11:14,5/17/15 11:14,,,,"As a client, I want the collections I call to be updated queries of content so that the most recent set of tagged content is available for that collection. 
+
+
+Original Description:
+Collections should be query-based or otherwise assembled in a reasonably real-time manner, as opposed to a static grouping of tagged things.
+In other words, there is an expectation that when a Collection is requested by a client, that that Collection will contain the most recent set of things appropriately tagged for that Collection.",MattPena@iheartmedia.com,con-nyc1tlc,ThomasDrapeau@iheartmedia.com,,,,,,,,,,,,,,,,,,,,,,,,,,#NAME?,,IHRAR-243,,,,,,,,,,17/May/15 11:14 AM;MattPena@iheartmedia.com;Native collection functionality,,,,,,,,
+Trending Tags,IHRAR-425,80704,,Story,Completed,AR,Completed,AdamHowell@iheartmedia.com,,,7/25/14 12:36,7/6/15 16:33,7/6/15 16:33,,,,"As a user, i want to see trending tags in the Metrics Tab of the tags tool so that I know what kind of content is being searched for on our network",MattPena@iheartmedia.com,con-nyc1tlc,ThomasDrapeau@iheartmedia.com,,,,,,,,,,,,,,,,,,,,,,,,,,List top 20 trending tags being searched for on the iheart network.,,IHRAR-348,,,,,,,,,,06/Jul/15 4:33 PM;MattPena@iheartmedia.com;duplicate of ar-430,,,,,,,,
+Primary Tag Association Not Editable,IHRAR-423,80699,,Story,Completed,AR,Completed,AdamHowell@iheartmedia.com,,,7/25/14 12:15,7/6/15 14:53,7/6/15 14:53,,,,"As an admin, I don't want a collections primary tag to be changed so that collection/tag relationship is not broken.
+
+
+Original Description:
+The ""seed"" or initial Publish Tag which was used to generate a collection should not be an editable property in the tool.
+
+For example you cannot open the Z100 Collection and remove the Z100 Publish Tag from it.",con-nyc1tlc,ThomasDrapeau@iheartmedia.com,,,,,,,,,,,,,,,,,,,,,,,,,,,User cannot remove the tag that created a collection (primary tag) from said collection ,,IHRAR-243,,,,,,,,,,,,,,,,,,
+Publish Tag Permissions (QA),IHRAR-436,80655,,Story,Completed,AR,Completed,,,,7/24/14 17:04,4/24/15 13:27,4/24/15 13:27,,,,As an admin I want Publish Tags to honor user permissions so that they can only be used by the appropriate users.,MattPena@iheartmedia.com,con-nyc1tlc,ThomasDrapeau@iheartmedia.com,,,,,,,,,,,,,,,,,,,,,,,,,,#NAME?,,IHRAR-345,,,,,,,,Yes,,24/Apr/15 1:27 PM;MattPena@iheartmedia.com;already part of Downey's User QA,,,,,,,,
+Tags Sorter,IHRAR-435,80653,,Story,Completed,AR,Completed,AdamHowell@iheartmedia.com,,,7/24/14 16:56,7/6/15 16:34,7/6/15 16:34,,,,"As a user I want to see all the content associated with any tag in the tags tool.
+
+
+Original Description:
+There should be a tab in the app that has a browser view of all things tagged, similar to Assets, but showing all objects tagged, not just binaries.
+
+This view should be filterable to show items only for a single tag.
+
+This view should be sortable by:
+- Tag
+- Tagged object type (Station, Artist, Photo, etc.)",MattPena@iheartmedia.com,con-nyc1tlc,ThomasDrapeau@iheartmedia.com,,,,,,,,,,,,,,,,,,,,,,,,,,"User can view a list of all content and assets associated with a tag
+User can link to that asset or content 
+Links open content tool or assets tool in a new tab when clicked.",,IHRAR-348,,,,,,,,,,"08/Oct/14 1:13 PM;con-nyc1tlc;Post 10/15 we should have a discussion w/ the gang on how to ""report"" on tagged content, either by sort or filter in Tags or Assets or another means.",06/Jul/15 4:34 PM;MattPena@iheartmedia.com;can be done with basic tag filtering in content tool,,,,,,,
+Tag deleted from namespace source,IHRAR-432,80649,,Story,Completed,AR,Completed,,,,7/24/14 16:52,5/17/15 11:28,5/13/15 11:08,,,,"Tags will also need to solve for, or at least trap, individual tags getting deleted.  For example, we'll need to gracefully accommodate an artist being deleted from Names or the removal of one of our personalities.
+
+In addition to solving for 404s, or how to gracefully accommodate tags disappearing from the system, we need to solve for orphaned content.  Content the CMS is storing that is not being published or consumed by users has no value, yet costs the system and will accumulate over time.
+
+This should be a spike for discussion around how to report on and/or manage orphaned content.",MattPena@iheartmedia.com,con-nyc1tlc,AdamHowell@iheartmedia.com,ThomasDrapeau@iheartmedia.com,,,,,,,,,,,,,,,,,,,,,REAP-1385,,,,"To avoid orphaned/less valuable content, should we mark tags inactive in radioedit if they are removed from their source list? I think the content is more valuable if we keep those descriptions but not allow those tags to be applied to new content.",,IHRAR-350,,,RadioEdit _07_GODSURGE,,,,1,,,07/Aug/14 12:00 PM;AdamHowell@iheartmedia.com;My recommendations for this is to update collections to remove tag rules immediately when a tag is deleted then probably add a tag to a job that runs off hours to remove deleted tags from all remaining objects/assets if we feel this will be too much to try to do on demand.,"13/May/15 11:07 AM;MattPena@iheartmedia.com;Need change ops to clean up tags from content that have been removed. 
+
+Currently removed tags remain on content but tag is no longer available in system.
+
+For front end, we will want to discuss removing these from collections and content.",,,,,,,
+Tag Changes Across Tagged content,IHRAR-429,80648,,Story,Completed,AR,Completed,,,,7/24/14 16:51,5/17/15 11:28,5/13/15 11:08,,,,"Tags will need to solve for an individual tag changing, and that change being reflected through the system; i.e. if the ""Tiesto"" tag changes to ""DJ Tiesto,"" that shouldn't break things and everywhere ""Tiesto"" showed up it should now show as ""DJ Tiesto.""",MattPena@iheartmedia.com,con-nyc1tlc,ThomasDrapeau@iheartmedia.com,,,,,,,,,,,IHRAR-636,IHRAR-463,,,,,,,,,,REAP-1385,,,,What is the impact on tagged content when tag name is modified?,,IHRAR-350,,,RadioEdit _07_GODSURGE,,,,1,,,13/May/15 11:02 AM;MattPena@iheartmedia.com;same as IHRAR-463,,,,,,,,
+External Tag Source Parity,IHRAR-438,80647,,Story,Completed,AR,Completed,,,,7/24/14 16:47,5/8/15 16:52,5/6/15 13:47,,,,I am RadioEdit and I want to maintain parity with external tag sources so that my listings of those tags don't become outdated and the content I am publishing is current and valuable to consumers.,MattPena@iheartmedia.com,con-nyc1tlc,ThomasDrapeau@iheartmedia.com,,,,,,,,,,,,,,,,,,,,,,,,,,"New tags are added in X time.
+Deleted tags are removed in X time.
+Changed tags are updated in X time.
+A record of tag changes is made and retrievable",,IHRAR-350,,,,,,,,,,01/Aug/14 4:43 PM;ThomasDrapeau@iheartmedia.com;This will be tricky.,01/Apr/15 5:25 PM;con-nyc1tlc;Tags will need a means of maintaining reasonable parity with Tag sources outside of RadioEdit.,"06/May/15 1:47 PM;MattPena@iheartmedia.com;Duplicate ticket, covered by https://jira.ccrd.clearchannel.com/browse/IHRAR-463",,,,,,
+Intra-Namespace Collision,IHRAR-441,80645,,Story,Completed,AR,Completed,,,,7/24/14 16:44,5/17/15 11:43,5/13/15 11:01,,,,"Tags should also be able to gracefully tolerate name collisions within the same namespace, where we have two or more Artists, Personalities, etc. with the same name.  For example ""Everest"" is both an American indie alt-country band and a Swiss electronic ambient duo.  Mind boggling.",MattPena@iheartmedia.com,con-nyc1tlc,ThomasDrapeau@iheartmedia.com,,,,,,,,,,,,,,,,,,,,,,IHRAR-651,,,,Method for identifying tags of the same name in a namespace,,IHRAR-350,,,RadioEdit _07_GODSURGE,,,,1,Yes,,"01/Aug/14 4:41 PM;ThomasDrapeau@iheartmedia.com;This should be taken care of by the names project. For artists, that is.","13/May/15 10:59 AM;MattPena@iheartmedia.com;for all tags: use ID as unique identifier, user source.name as tag display name.","13/May/15 11:00 AM;MattPena@iheartmedia.com;Need To user source.name as user friendly name
+Need to user Name as unique identifier
+For all tags
+Work needs to be done on import and in applications that create tags to make sure this is the case.
+Work needs to be done to display the 2 different name fields when creating content and searching tags",,,,,,
+Inter-Namespace Collision QA,IHRAR-428,80643,,Story,Completed,AR,Completed,,,,7/24/14 16:38,4/22/15 16:42,4/15/15 13:29,,,,"Tags should be able to support collisions between namespaces, where there is a tag of the same name in two or more namespaces.
+
+For example, ""JJ"" is both a Personality and a Show on Z100, so should be able to exist as both a Personality tag and as a Show tag.",MattPena@iheartmedia.com,con-nyc1tlc,ThomasDrapeau@iheartmedia.com,,,,,,,,,,,,,,,,,,,,,,,,,,,,IHRAR-347,,,,,,,,Yes,,15/Apr/15 1:29 PM;MattPena@iheartmedia.com;solved by namespace prefix,,,,,,,,
+Non-Editable Externally-Sourced Tags,IHRAR-433,80633,,Story,Completed,AR,Completed,,,,7/24/14 16:03,4/1/15 16:39,4/1/15 16:39,,,,"Tags sourced from outside the Tags tool should not be editable in the Tags tool.
+
+Tags from outside RadioEdit should be edited at their source location, for example the artist catalog database, and then synchronized somehow with RadioEdit.
+
+If tags sourced from outside RadioEdit are edited within RadioEdit it is not reasonable to expect to be capable of maintaining parity with external sources.",con-nyc1tlc,AdamHowell@iheartmedia.com,ThomasDrapeau@iheartmedia.com,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,07/Aug/14 12:37 AM;AdamHowell@iheartmedia.com;Lets start documenting where we are pulling these from and make each a work task that needs to happen to complete Tags tool. I'll do this one. I'll work with Drapeau on Core and we can talk more on what we are going to do about artists.,"07/Aug/14 2:35 PM;con-nyc1tlc;Awesome.  I could see ""Editable"" being a Namespace property within Tags.  Or alternatively the namespace being editable is inferred if ""Source"" for the Namespace is ""Tags"" and not ""External.""",,,,,,,
+Source Tags from Outside RadioEdit,IHRAR-440,80629,,Story,Completed,AR,Completed,,,,7/24/14 16:01,4/1/15 16:39,4/1/15 16:39,,,,"The tool should be able to source namespaces of tags from outside RadioEdit and treat them as canonical.  Namespace which will be maintained and sourced from outside RadioEdit include:
+- Artists (wil come from the Content team's Names project)
+- Personalities (TBD, possibly from CORE)
+- Shows (also TBD, possibly from CORE)",con-nyc1tlc,ThomasDrapeau@iheartmedia.com,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,01/Aug/14 4:32 PM;ThomasDrapeau@iheartmedia.com;This is the tricky bit.,01/Aug/14 4:47 PM;con-nyc1tlc;Indeed,,,,,,,
+Source Tags from Other RadioEdit Tools,IHRAR-431,80628,,Story,Completed,AR,Completed,,,,7/24/14 16:00,4/1/15 16:39,4/1/15 16:39,,,,"The tool should be able to source namespaces of tags from other RadioEdit tools and treat them as canonical.  Namespace which will be maintained in and sourced from other RadioEdit tools include:
+- Genres (from SMT)
+- iHeart Stations (also from SMT)
+- Partner Stations (yup you guessed it- from SMT)
+- Users (from the Users tool)",con-nyc1tlc,ThomasDrapeau@iheartmedia.com,,,,,,,,,,,,,,,,,,,,,,,IHRAR-434,,,,,,,,,,,,,,,,,,,,,,,,
+Tag Namespaces,IHRAR-434,80625,,Story,Completed,AR,Completed,,,,7/24/14 15:56,4/22/15 16:43,4/10/15 11:10,,,,"As an admin, I want radioedit to support multiple namespaces of tags so that canonical references can be categorized and used across tools.
+
+Anticipated tag namespaces include (where to retrieve):
+Users (RadioEdit - Users Tool)
+Genres (RadioEdit - SMT)
+iHeart Stations (RadioEdit - SMT)
+iHeart Events (RadioEdit - manually curated within Tags Tool)
+Artists (Names Project)
+Personalities (CORE FTP dump)
+Shows (CORE FTP dump)
+Partner Stations (RadioEdit - SMT)
+National Campaigns (RadioEdit - ad tags manually curated within Tags Tool)
+Local Campaigns (RadioEdit - ad tags manually curated within Tags Tool)",con-nyc1tlc,ThomasDrapeau@iheartmedia.com,,,,,,,,,,,,,,,,,,,,,,,,,,,"Allow for tag namespaces to be created from Radioedit tool data
+Allow for tag namespace to be created from non-Radioedit (external) data
+
+",,IHRAR-347,,,,,,,,,,,,,,,,,,
+Automated Notifications,IHRAR-230,79737,,Story,Submitted,AR,,,GregCerchione@iheartmedia.com,RobRowe@iheartmedia.com,7/11/14 10:34,4/30/19 9:33,,,Streams,,"Create an email distribution list for SMT change announcements & automated sends when stations change status.
+
+*Subject* 
+[SMT Notification] Active: THICKE-FL Robin Thicke Guest DJ
+OR [SMT Notification] Inactive: THICKE-FL Robin Thicke Guest DJ
+
+*Body*
+Status: Active
+Name: Robin Thicke Guest DJ
+Description: His favorite music and stories
+Web Link: http://www.iheart.com/live/Robin-Thicke-Guest-DJ-6610/
+Mobile Link: ihr://play/live/6610
+Stream ID: 6610
+SMT: THICKE-FL
+Alias: IEVJ-FL
+HD2: KLFX-HD2
+Provider: Clear Channel
+
+Sent only after published",MattPena@iheartmedia.com,GregCerchione@iheartmedia.com,MichaelReichard@iheartmedia.com,RobRowe@iheartmedia.com,MikeWoodruff@iheartmedia.com,,,,,,,,,,,,,,,,,,,,,,,,,,IHRAR-4469,,,,,,,,,,15/Aug/17 3:17 PM;MattPena@iheartmedia.com;Will be considered for SMT 4,06/Aug/18 8:53 AM;MikeWoodruff@iheartmedia.com;Old ticket.  Moving to reaper candidates.  Please reach out if this is still needed.  ,"06/Aug/18 9:07 AM;RobRowe@iheartmedia.com;I'd still like it, but it's a nice-to-have. Up to [~1119007] if its important enough to prioritize for SMT.",06/Aug/18 9:15 AM;GregCerchione@iheartmedia.com;I would definitely like this. Good for partners and a wider distribution for certain stations being turned on/off. [~ccrnyc1rar] [~ccrnyc2msw],"18/Oct/18 2:20 PM;MikeWoodruff@iheartmedia.com;Reviewed with Greg today.  Need to think through frequency of notifications (eg. upon submission of a change, upon approval/rejection.... and single notification for each change/approval - or a digest.  Who gets sent which type of notification - all users who have permission to a certain role - or to a list of manually-specified users?",,,,
+Need to address necessity to load logos to T3 media library for Partner tool,IHRAR-212,79306,,Story,Completed,AR,Completed,,MichaelReichard@iheartmedia.com,MichaelReichard@iheartmedia.com,7/2/14 17:21,5/28/15 18:16,5/28/15 18:16,,Streams,,"Need to find a safe, reliable, and automated way to take images loaded into RE media library and send them to T3 media library.  Seems like it would be confusing to have partners need to load the image twice.  ",cccbur1mjl,DanThom@iheartmedia.com,MichaelReichard@iheartmedia.com,,,,,,,,,,,,,,,,,,,,,,,,,,,,IHRAR-237,,,,,,,,,,31/Oct/14 12:03 PM;cccbur1mjl;this is an open ticket that needs to resolved during on of the SMT builds and will need to be worked out with Dan. Riechard and Dan can give you more info.,"11/Feb/15 10:55 AM;MichaelReichard@iheartmedia.com;my suggestion is that we either (1) when you add an image to the re image library, we dynamically create a t3 media id as well or [predominantly a RE tool-side fix] (2) find some way to pass radioedit images directly to t3 [t3 web services update predominiantly].
+
+dan do you have any thoughts on how we could accomplish this?  f","28/May/15 6:16 PM;MichaelReichard@iheartmedia.com;will address with work to depricate t3 SMT tool, and have AMP write into T3 dbs/web services",,,,,,
+SMT Change Request streams needs to be refreshed between consecutive approvals,IHRAR-209,79305,,Story,Completed,AR,Completed,,MichaelReichard@iheartmedia.com,MichaelReichard@iheartmedia.com,7/2/14 17:16,4/22/15 15:03,4/21/15 16:45,SMT 3.0 Release,Streams,,"Users need to refresh page when approving multiple pending changes in one session
+
+http://radioedit.iheart.com/service/app/shell/#/5bfbt9/stream-manager/requests ",MichaelReichard@iheartmedia.com,AdamHowell@iheartmedia.com,,,,,,,,,,,,,,,,,,,,,,,,,,,,,IHRAR-237,,,RadioEdit _05_E,,,,1,No,,08/Apr/15 1:47 PM;AdamHowell@iheartmedia.com;michael to test,15/Apr/15 5:42 PM;MichaelReichard@iheartmedia.com;working well.  ,,,,,,,
+SMT 3.1: New Markets added to RadioEdit SMT should be automatically available for iHR publishing,IHRAR-208,79005,,Story,Completed,AR,Completed,AdamHowell@iheartmedia.com,MichaelReichard@iheartmedia.com,MichaelReichard@iheartmedia.com,6/26/14 18:06,8/15/16 10:40,8/15/16 10:40,,Streams,,"http://radioedit.iheart.com/service/app/shell/#/7low29/stream-manager/markets
+
+When you add a market to a the SMT tool, it should be dynamically available for programming to iHeartRadio",AlexMamut@iheartmedia.com,MichaelReichard@iheartmedia.com,con-nyc1tlc,AdamHowell@iheartmedia.com,,,,,,,,IHRAR-217,AGILEAMP-165,,,,,,,,,,,,,15/Apr/15 11:10 AM;ccrnyc1mcr;markets19.json;https://jira.ihrint.com/secure/attachment/80551/markets19.json,,,,,IHRAR-237,,,,,,,0,No,,17/Jul/14 2:11 PM;AdamHowell@iheartmedia.com;90% of the work is on the amp side to have them create an AMP end-point or point us to the place this needs to be in. Radio Edit isn't built to write to outside DBs.,20/Nov/14 9:28 AM;AlexMamut@iheartmedia.com;We decided with Adam Howell and Matt Fielder that a JSON service will be created for AMP to ingest. Linking dependent jira.,25/Mar/15 3:40 PM;con-nyc1tlc;ready for AMP to pull in as a JSON object,26/Mar/15 9:32 AM;AlexMamut@iheartmedia.com;Sent email to Matt explaining next steps. Assigning to Adam.,15/Apr/15 8:48 AM;AdamHowell@iheartmedia.com;This is happening in the next AMP sprint,"15/Apr/15 11:11 AM;MichaelReichard@iheartmedia.com;the output @ http://script.radioedit.ihrdev.com/stream-manager/market-export/ 
+
+looks different than the json currently being used (see attached).
+
+should we match the current output exactly?  ",28/Apr/15 2:26 PM;MichaelReichard@iheartmedia.com;data at http://script.radioedit.ihrdev.com/stream-manager/market-export/ has been verified to match prod market export json.  SMT work is complete pending AMP job release.  ,"01/Dec/15 11:10 PM;MichaelReichard@iheartmedia.com;market export script now is: 
+
+http://stream-manager.radioedit.ihrdev.com/api/market-export",15/Aug/16 10:40 AM;MichaelReichard@iheartmedia.com;closing this ticket - it's working in prodution.  
+"Add ""Widget"" field to SMT",IHRAR-223,76875,,Story,Completed,AR,Completed,,RobRowe@iheartmedia.com,RobRowe@iheartmedia.com,5/20/14 11:32,4/16/15 11:13,4/16/15 11:13,SMT 3.0 Release,Streams,,"New field per stream in SMT to enable ""Widget"". This field will be used by the web client to identify if a live radio station should include an embeddable widget version when shared to social networks. 
+
+Unchecked by default for all existing and new streams. Manual enable in SMT.
+
+Field should be added to liveStation AMP service for web client to reference.",AlexMamut@iheartmedia.com,MichaelReichard@iheartmedia.com,RobRowe@iheartmedia.com,RenatoTiczon@iheartmedia.com,con-nyc1tlc,AdamHowell@iheartmedia.com,LHo,MatthewFielder@iheartmedia.com,SpencerMorris@iheartmedia.com,ThomasDrapeau@iheartmedia.com,WIDGET-17,,,,,,,,,,,,,,,20/May/14 11:32 AM;ccrnyc1rar;Screen Shot 2014-05-20 at 11.29.20 AM.png;https://jira.ihrint.com/secure/attachment/55436/Screen+Shot+2014-05-20+at+11.29.20+AM.png,,,,,IHRAR-237,,,RadioEdit _02_B,RadioEdit _03_C,RadioEdit _05_E,,1,Yes,,28/Jul/14 1:11 PM;AdamHowell@iheartmedia.com;Does it make sense to add this to the Feeds data or the Social Data? That way amp can just receive and output the information with out needing to look for it.,"28/Jul/14 1:35 PM;RobRowe@iheartmedia.com;Would mean we'd have to create a site for non-CC stations, but if you're up for it I am too. Primary use case is the one-off live stations for clients (Dunkin Donuts Radio, Walmart Radio, etc)","28/Jul/14 1:41 PM;MichaelReichard@iheartmedia.com;I'd prefer we not get in the business of widgets for 3rd parties unless we see a real use case for it.  
+
+As to placement, I think it belongs under Social Info.  We should also check to see what parts are customizable on the widget, and maybe add those sections in - i think Hex codes for different colors, plus some sponsor specific text / logo.  ","02/Sep/14 5:56 PM;MichaelReichard@iheartmedia.com;Clarified with Rob Rowe.  All we need is a new node in station export:
+
+widget: yes
+widget: no
+
+or 
+
+widget: true
+widget: false
+
+they'll handle the rest.  ",31/Oct/14 11:55 AM;cccbur1mjl;This ticket still needs to be done,26/Mar/15 9:35 AM;AlexMamut@iheartmedia.com;Ready for QA,03/Apr/15 1:20 PM;MichaelReichard@iheartmedia.com;Looks good in dev.  ,10/Apr/15 11:08 AM;MichaelReichard@iheartmedia.com;Looks good in staging.  ,
+Page Redirection & Site Keywords,IHRAR-332,75880,,Story,Completed,AR,Completed,AdamRoberts@iheartmedia.com,RobRowe@iheartmedia.com,RobRowe@iheartmedia.com,5/5/14 8:56,1/12/17 16:15,6/10/16 10:25,,Site Manager,,"Stations are retired but hundreds of sites are still linking to them. How can we redirect those URLs to related URLs? 
+
+For example, this is dead now:
+http://www.iheart.com/live/iheartradio-music-awards-radio-6474/
+
+But its still getting traffic. Is there a way we can redirect to http://news.iheart.com/awards/ ?
+
+",RobRowe@iheartmedia.com,MikeWoodruff@iheartmedia.com,AdamHowell@iheartmedia.com,,,,,,,,,,,,,,,,,,,,,,IHRAR-303,,,,"User can setup define redirect rules for pages linked to their site manager
+User can set a redirect url or path
+User can identify if this is permanent or temporary redirect (301 vs 302)
+User can set start/end period for 302 redirect
+User can set URLs with and without trailing slash",,,,,RadioEdit _12_ Lich,,,,5,No,,09/Sep/14 10:21 AM;AdamHowell@iheartmedia.com;[~ccrnyc1rxt] is this assigned to you for requirements definition purpose?,"09/Sep/14 10:59 AM;RobRowe@iheartmedia.com;Sorry, I'll keep this one assigned to me for now. Not a high priority.","12/Jun/15 2:49 PM;MikeWoodruff@iheartmedia.com;Do we anticipate this being an automatic redirection (eg. where when a station is retired, a record of it is kept in SMT and a ""replacement"" station programmed?  Or are we thinking more along the lines of the T2 page redirection tool where a user can specify both the old URL and the new one?",15/Jun/15 7:57 PM;RobRowe@iheartmedia.com;Both?,,,,,
+Delete from Library,IHRAR-420,71388,,Story,Completed,AR,Completed,AdamHowell@iheartmedia.com,,,3/5/14 0:24,9/15/15 17:09,9/15/15 17:09,,z-Schedules (DEPRECATED),,"As a user, I want the ability to delete a slide from the slide library so that it is no longer available for use",con-nyc1tlc,AdamHowell@iheartmedia.com,,,,,,,,,,,,,,,,,,,,,,,,,,,"User can select slides to be removed from the slide library
+User is presented with an impact report before confirming delete - report should outline if the slides current schedule, including container name and scheduled date/times.
+User cannot delete slides unless impact report is null.
+",,,,,,,,,,,,29/Jul/14 1:53 PM;AdamHowell@iheartmedia.com;[~con-nyc1tlc] to provide more requirements,"30/Jul/14 4:45 PM;con-nyc1tlc;There should be a small ""X"" in the top right of each image to delete it from the Library.  The system should trap a delete attempt of an image is in a currently-shceduled DL and pop an error modal:
+
+ERROR: You are attempting to delete an image that's used in one or more upcoming schedules.",,,,,,,
