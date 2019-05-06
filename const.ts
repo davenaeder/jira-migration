@@ -140,6 +140,7 @@ export const USER_TABLE = {
     uanjum: "UzminaAnjum@iheartmedia.com",
 };
 export const USER_COLS = ["Assignee", "Reporter", "Creator", "Watchers"];
+export const DATE_COLS = ["Created", "Updated", "Resolved"];
 export const PROJ_OLD_KEY = "AR";
 export const PROJ_NEW_KEY = "IHRAR";
 export const WANTED_COLS = [

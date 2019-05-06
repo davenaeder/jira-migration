@@ -1,0 +1,197 @@
+{
+  "config.version" : "2.0",
+  "config.project.from.csv" : "false",
+  "config.encoding" : "UTF-8",
+  "config.file.id" : "1c6facd5-2e67-47ef-8a2f-d23c0e8f12c5",
+  "config.email.suffix" : "@iheartmedia.com",
+  "config.file.name" : "translated-2014.csv",
+  "config.field.mappings" : {
+    "Description" : {
+      "jira.field" : "description",
+      "userChanged" : "true",
+      "manualMapping" : "false"
+    },
+    "Attachment" : {
+      "jira.field" : "attachment",
+      "userChanged" : "true",
+      "manualMapping" : "false"
+    },
+    "Creator" : {
+      "jira.field" : "reporter",
+      "userChanged" : "true",
+      "manualMapping" : "false"
+    },
+    "Watchers" : {
+      "jira.field" : "watcher",
+      "userChanged" : "true",
+      "manualMapping" : "false"
+    },
+    "Custom field (Epic Link)" : {
+      "userChanged" : "true",
+      "manualMapping" : "false",
+      "existing.custom.field" : "10008"
+    },
+    "Created" : {
+      "userChanged" : "true",
+      "manualMapping" : "false",
+      "existing.custom.field" : "10435"
+    },
+    "Custom field (TestEng Required)" : {
+      "userChanged" : "true",
+      "manualMapping" : "false",
+      "existing.custom.field" : "10131"
+    },
+    "Outward issue link (Relates)" : {
+      "link.type" : "10003",
+      "userChanged" : "true",
+      "manualMapping" : "false"
+    },
+    "Fix Version/s" : {
+      "jira.field" : "fixVersions",
+      "userChanged" : "true",
+      "manualMapping" : "false"
+    },
+    "Custom field (Epic Colour)" : {
+      "userChanged" : "true",
+      "manualMapping" : "false",
+      "existing.custom.field" : "10421"
+    },
+    "Resolved" : {
+      "jira.field" : "resolutiondate",
+      "userChanged" : "true",
+      "manualMapping" : "false"
+    },
+    "Issue id" : {
+      "jira.field" : "issue-id",
+      "userChanged" : "true",
+      "manualMapping" : "false"
+    },
+    "Status" : {
+      "jira.field" : "status",
+      "userChanged" : "true",
+      "manualMapping" : "true"
+    },
+    "Assignee" : {
+      "userChanged" : "true",
+      "manualMapping" : "false",
+      "existing.custom.field" : "10426"
+    },
+    "Custom field (Steps to Reproduce)" : {
+      "userChanged" : "true",
+      "manualMapping" : "false",
+      "existing.custom.field" : "10502"
+    },
+    "Comment" : {
+      "jira.field" : "comment",
+      "userChanged" : "true",
+      "manualMapping" : "false"
+    },
+    "Updated" : {
+      "jira.field" : "updated",
+      "userChanged" : "true",
+      "manualMapping" : "false"
+    },
+    "Component/s" : {
+      "jira.field" : "components",
+      "userChanged" : "true",
+      "manualMapping" : "false"
+    },
+    "Issue key" : {
+      "jira.field" : "issuekey",
+      "userChanged" : "true",
+      "manualMapping" : "false"
+    },
+    "Parent id" : {
+      "jira.field" : "subtask-parent-id",
+      "userChanged" : "true",
+      "manualMapping" : "false"
+    },
+    "Reporter" : {
+      "jira.field" : "reporter",
+      "userChanged" : "true",
+      "manualMapping" : "false"
+    },
+    "Labels" : {
+      "jira.field" : "labels",
+      "userChanged" : "true",
+      "manualMapping" : "false"
+    },
+    "Outward issue link (Duplicate)" : {
+      "link.type" : "10002",
+      "userChanged" : "true",
+      "manualMapping" : "false"
+    },
+    "Custom field (Acceptance Criteria)" : {
+      "userChanged" : "true",
+      "manualMapping" : "false",
+      "existing.custom.field" : "10111"
+    },
+    "Issue Type" : {
+      "jira.field" : "issuetype",
+      "userChanged" : "true",
+      "manualMapping" : "false"
+    },
+    "Outward issue link (Dependency)" : {
+      "link.type" : "10204",
+      "userChanged" : "true",
+      "manualMapping" : "false"
+    },
+    "Custom field (Epic Name)" : {
+      "userChanged" : "true",
+      "manualMapping" : "false",
+      "existing.custom.field" : "10005"
+    },
+    "Outward issue link (Blocks)" : {
+      "link.type" : "10000",
+      "userChanged" : "true",
+      "manualMapping" : "false"
+    },
+    "Custom field (Epic Status)" : {
+      "userChanged" : "true",
+      "manualMapping" : "false",
+      "existing.custom.field" : "10006"
+    },
+    "Summary" : {
+      "jira.field" : "summary",
+      "userChanged" : "true",
+      "manualMapping" : "false"
+    },
+    "Sprint" : {
+      "userChanged" : "true",
+      "manualMapping" : "false",
+      "existing.custom.field" : "10010"
+    },
+    "Custom field (Story Points)" : {
+      "userChanged" : "true",
+      "manualMapping" : "false",
+      "existing.custom.field" : "10022"
+    },
+    "Custom field (Testing Notes)" : {
+      "userChanged" : "true",
+      "manualMapping" : "false",
+      "existing.custom.field" : "10106"
+    },
+    "Resolution" : {
+      "jira.field" : "resolution",
+      "userChanged" : "true",
+      "manualMapping" : "false"
+    }
+  },
+  "config.csv.file.id" : null,
+  "config.value.mappings" : {
+    "Status" : {
+      "Submitted" : "10149",
+      "Completed" : "10101"
+    }
+  },
+  "config.delimiter" : ",",
+  "config.project" : {
+    "project.type" : null,
+    "project.key" : "IHRAR",
+    "project.description" : null,
+    "project.url" : null,
+    "project.name" : "iHR Radioedit",
+    "project.lead" : null
+  },
+  "config.date.format" : "dd/MMM/yy h:mm a"
+}

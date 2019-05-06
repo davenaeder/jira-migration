@@ -1,5 +1,6 @@
 import * as XLSX from "xlsx";
 import * as fs from "fs";
+import * as moment from "moment";
 import {
     ISSUE_SHEETS,
     USER_TABLE,
@@ -7,9 +8,13 @@ import {
     WANTED_COLS,
     PROJ_OLD_KEY,
     PROJ_NEW_KEY,
+    DATE_COLS,
 } from "./const";
 
 const WIDTH = 702;
+
+const DATE_FMTS = ["M/D/YY H:mm", "DD/MMM/YY hh:mm A"];
+const DATE_OUTPUT = "DD/MMM/YY h:mm A";
 
 const generateColumnAddresses = () => {
     const addrs: string[] = [];
@@ -92,12 +97,22 @@ const visitCells = (
     }
 };
 
+const checkDates = (input: string) => {
+    for (const fmt of DATE_FMTS) {
+        const m = moment(input, fmt);
+        if (m.isValid()) {
+            return m.format(DATE_OUTPUT);
+        }
+    }
+    throw new Error(`Unknown date format: ${input}`);
+};
+
 const COLS = generateColumnAddresses();
 const RE_ADDR = /([A-Z]+)([0-9]+)/;
 const RE_PROJ_KEY = new RegExp(`${PROJ_OLD_KEY}\-([0-9]+)`);
 
 function main() {
-    var workbook = XLSX.readFile("issues.xlsx");
+    var workbook = XLSX.readFile("./data/issues.xlsx");
 
     const getColumnNames = (sheet: XLSX.WorkSheet) =>
         COLS.map(addr => [addr, sheet[`${addr}1`]])
@@ -117,6 +132,11 @@ function main() {
         // Get the column addresses from the know username columns
         const usernameColAddrs = columnsWeWant
             .filter(([addr, column]) => USER_COLS.includes(column))
+            .reduce((p, c) => [...p, c[0]], [] as string[]);
+
+        // Get the column addresses from the known date columns
+        const dateColAddrs = columnsWeWant
+            .filter(([addr, column]) => DATE_COLS.includes(column))
             .reduce((p, c) => [...p, c[0]], [] as string[]);
 
         // Quick function for generating a new row
@@ -154,25 +174,27 @@ function main() {
                         // NOTE: good spot to push users into a set if you're looking to generate a list
                         const translatedUser = USER_TABLE[value.toLowerCase()];
                         value = translatedUser ? translatedUser : value;
-                    } else if (colName === "Comment") {
-                        const [
-                            commentDate,
-                            commentUser,
-                            commentText,
-                        ] = value.split(";");
+                    } else if (dateColAddrs.indexOf(addr.c) >= 0) {
+                        value = checkDates(value);
+                    } else if (
+                        colName === "Comment" ||
+                        colName === "Attachment"
+                    ) {
+                        const [fieldDate, fieldUser, fieldValue] = value.split(
+                            ";",
+                        );
                         const translatedUser =
-                            USER_TABLE[commentUser.toLowerCase()];
+                            USER_TABLE[fieldUser.toLowerCase()];
                         if (translatedUser) {
-                            const newCommentText = [
-                                commentDate,
+                            value = [
+                                checkDates(fieldDate),
                                 translatedUser,
-                                commentText,
+                                fieldValue,
                             ].join(";");
-                            value = newCommentText;
                         }
                     }
                 }
-                console.log(addr.p, value);
+                // console.log(addr.p, value);
                 newRow(addr.y).push(value);
             }
         });
@@ -180,7 +202,10 @@ function main() {
         const newWorkbook = XLSX.utils.book_new();
         // console.log(newSheet);
         const newXLSheet = XLSX.utils.aoa_to_sheet(newSheet);
-        fs.writeFileSync(`translated-${sheetName}.csv`, XLSX.utils.sheet_to_csv(newXLSheet));
+        fs.writeFileSync(
+            `./data/translated-${sheetName}.csv`,
+            XLSX.utils.sheet_to_csv(newXLSheet),
+        );
         // XLSX.utils.book_append_sheet(newWorkbook, newXLSheet);
         // XLSX.writeFile(newWorkbook, "issues-translated.xlsx");
     });
